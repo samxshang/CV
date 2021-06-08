@@ -2,7 +2,7 @@
 
 % Choose bibliography style for formatting list of publications
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
-\bibliography{papers}
+\bibliography{CV/Feed/style/papers}
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
 \def\theme{OliveGreen}
@@ -12,7 +12,7 @@
 % Example photograph taken from Wikimedia Commons
 % https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
 
-\usepackage{simplecv}
+\usepackage{CV/Feed/style/SSCV}
 
 \boldname{Surname}{Name}{N.}
 
@@ -35,19 +35,19 @@
 % }{photo.jpg}
 
 % Page One
-\import{sections/}{education.tex}
-\import{sections/}{experience.tex}
-\import{sections/}{publications.tex}
+\import{CV/Feed/content/}{education.tex}
+\import{CV/Feed/content/}{experience.tex}
+\import{CV/Feed/content/}{publications.tex}
 
 \pagebreak
 
 % Page Two
-\import{sections/}{teaching.tex}
+\import{CV/Feed/content/}{teaching.tex}
 \sidebyside
-    {\import{sections/}{skills.tex}}
-    {\import{sections/}{languages.tex}}
-\import{sections/}{projects.tex}
-\import{sections/}{awards.tex}
-\import{sections/}{extracurricular.tex}
+    {\import{CV/Feed/content/}{skills.tex}}
+    {\import{CV/Feed/content/}{languages.tex}}
+\import{CV/Feed/content/}{projects.tex}
+\import{CV/Feed/content/}{awards.tex}
+\import{CV/Feed/content/}{activities.tex}
 
 \end{document}
