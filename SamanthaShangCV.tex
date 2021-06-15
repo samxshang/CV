@@ -2,7 +2,7 @@
 
 % Choose bibliography style for formatting list of publications
 \usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
-\bibliography{CV/Feed/style/papers}
+\bibliography{Feed/style/papers}
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
 \def\theme{OliveGreen}
@@ -12,14 +12,14 @@
 % Example photograph taken from Wikimedia Commons
 % https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
 
-\usepackage{CV/Feed/style/SSCV}
+\usepackage{Feed/style/SSCV}
 
 \boldname{Surname}{Name}{N.}
 
 \begin{document}
 
 % Heading
-\headinginline{Samantha Shang}{
+\headinginline{Samantha X. Shang}{
     Website: \website{samxshang.github.io} \\ 
     Email: \email{shang.x@queensu.ca} \\
     %LinkedIn: \linkedin{samshang} \\
@@ -35,19 +35,40 @@
 % }{photo.jpg}
 
 % Page One
-\import{CV/Feed/content/}{education.tex}
-\import{CV/Feed/content/}{experience.tex}
-\import{CV/Feed/content/}{publications.tex}
+\import{Feed/content/}{education.tex}
+\import{Feed/content/}{topics.tex}
+%\import{Feed/content/}{publications.tex}
+\import{Feed/content/}{manuscripts.tex}
+\import{Feed/content/}{experience.tex}
 
-\pagebreak
+
+% \pagebreak
 
 % Page Two
-\import{CV/Feed/content/}{teaching.tex}
-\sidebyside
-    {\import{CV/Feed/content/}{skills.tex}}
-    {\import{CV/Feed/content/}{languages.tex}}
-\import{CV/Feed/content/}{projects.tex}
-\import{CV/Feed/content/}{awards.tex}
-\import{CV/Feed/content/}{activities.tex}
+\import{Feed/content/}{conferences.tex}
+\import{Feed/content/}{teaching.tex}
+
+% \pagebreak
+
+% Page Three
+\import{Feed/content/}{awards.tex}
+\import{Feed/content/}{journalreviews.tex}
+\import{Feed/content/}{affiliations.tex}
+\import{Feed/content/}{skills.tex}
+
+\import{Feed/content/}{activities.tex}
+
+
+% \pagebreak
+
+% Archive
+\import{Feed/content/}{languages.tex}
+\import{Feed/content/}{training.tex}
+
+
+
+
+%\import{Feed/content/}{projects.tex}
+
 
 \end{document}
